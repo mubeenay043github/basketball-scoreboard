@@ -1,29 +1,32 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="scoreboard">
-                <h3>HOME</h3>
-                <div class = "score" id = "homeScore-el">0</div>
-                <button class="buttonText" id = "homeAdd1" onclick="homeIncrement1()">+1</button>
-                <button class="buttonText" id = "homeAdd2" onclick="homeIncrement2()">+2</button>
-                <button class="buttonText" id = "homeAdd3" onclick="homeIncrement3()">+3</button>
-            </div>
-            <div class="scoreboard">
-                <h3>GUEST</h3>
-                <div class= "score" id = "guestScore-el">0</div>
-                <button class="buttonText" id = "guestAdd1" onclick="guestIncrement1()">+1</button>
-                <button class="buttonText" id = "guestAdd2" onclick="guestIncrement2()">+2</button>
-                <button class="buttonText" id = "guestAdd3" onclick="guestIncrement3()">+3</button>
-            </div>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <h3>HOME</h3>
+            <div class="score" id="homeScore-el">0</div>
+            <button class="buttonText" id="homeAdd1" onclick="homeIncrement1()">+1</button>
+            <button class="buttonText" id="homeAdd2" onclick="homeIncrement2()">+2</button>
+            <button class="buttonText" id="homeAdd3" onclick="homeIncrement3()">+3</button>
         </div>
-        <div class="control">
-            <button id="restartGame" onclick="restartGame()">Restart</button>
+        <div class="scoreboard">
+            <h3>AWAY</h3>
+            <div class="score" id="guestScore-el">0</div>
+            <button class="buttonText" id="guestAdd1" onclick="guestIncrement1()">+1</button>
+            <button class="buttonText" id="guestAdd2" onclick="guestIncrement2()">+2</button>
+            <button class="buttonText" id="guestAdd3" onclick="guestIncrement3()">+3</button>
         </div>
-        
-        <script src="index.js"></script>
-        
-    </body>
+    </div>
+    <div class="control">
+        <button id="restartGame" onclick="restartGame()">Restart</button>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
 </html>
